@@ -1,20 +1,26 @@
 {
   "name": "frontend-mentor",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "new": "node --loader ts-node/esm utils/initApp.ts"
   },
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
+    "@types/node": "^16.10.3",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@vitejs/plugin-react": "^1.0.0",
+    "chalk": "^4.1.2",
+    "ts-node": "^10.2.1",
     "typescript": "^4.3.2",
-    "vite": "^2.6.4"
+    "vite": "^2.6.4",
+    "zx": "^4.2.0"
   }
 }
