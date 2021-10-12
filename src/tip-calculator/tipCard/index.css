@@ -66,15 +66,17 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* gitter 实现 */
+  margin: 0 -6px;
 }
 
 .percent-item {
-  width: 40px;
+  width: 45px;
   padding: 3px 30px;
   border-radius: 3px;
-  margin: 6px;
   flex-shrink: 1;
   flex-grow: 1;
+  margin: 6px;
 }
 
 .result-container {

@@ -40,7 +40,7 @@ const TipCard: FC = () => {
             })}
             <div className='percent-item bg-light-1 font-l white flex justify-center'>
               <input
-                className='input-custom bg-light-1 font-l'
+                className='input-custom bg-light-1 font-l light-2'
                 style={{ width: '90px' }}
                 type='text'
                 placeholder='Custom'

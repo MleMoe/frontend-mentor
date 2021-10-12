@@ -49,6 +49,14 @@ code {
   color: #fff;
 }
 
+.light-1 {
+  color: hsl(189, 41%, 97%);
+}
+
+.light-2 {
+  color: hsl(185, 41%, 84%);
+}
+
 .dark-1 {
   color: hsl(184, 14%, 56%);
 }
