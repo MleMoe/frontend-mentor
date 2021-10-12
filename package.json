@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "new": "node --loader ts-node/esm utils/initApp.ts"
+    "new": "node utils/initApp.mjs"
   },
   "dependencies": {
     "react": "^17.0.0",

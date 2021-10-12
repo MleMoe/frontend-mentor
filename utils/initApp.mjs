@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import chalk from 'chalk';
 import { $, question } from 'zx';
 import * as fs from 'fs';
@@ -25,7 +26,7 @@ const pagesFolder = `${pagesPath}/${appName}`;
 
 await $`mkdir ${pagesFolder}`;
 
-const getHtml = (pagaName: string) => `<!DOCTYPE html>
+const getHtml = (pagaName) => `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
