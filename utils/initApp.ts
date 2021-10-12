@@ -35,7 +35,7 @@ const getHtml = (pagaName: string) => `<!DOCTYPE html>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/${pagaName}/main.tsx"></script>
+    <script type="module" src="/src/${pagaName}/index.tsx"></script>
   </body>
 </html>`;
 

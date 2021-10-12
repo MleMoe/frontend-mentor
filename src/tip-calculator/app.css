@@ -1,0 +1,17 @@
+.app {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.app-logo {
+  background-image: url(./images/logo.svg);
+  background-size: contain;
+  width: 87px;
+  height: 54px;
+  margin-bottom: 60px;
+}

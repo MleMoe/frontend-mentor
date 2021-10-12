@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0;
+  width: 100vw;
+  max-width: 900px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 375px;
+}
+
+.card-item-left {
+  flex-shrink: 1;
+  padding: 20px;
+}
+
+.card-item-right {
+  box-sizing: border-box;
+  padding: 30px;
+  min-width: 345px;
+  flex-shrink: 0;
+}
+
+.card-item-sub {
+  margin-bottom: 30px;
+}
+
+.input-container {
+  border-radius: 2px;
+  padding: 14px 16px;
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-dollar {
+  background-image: url(../images/icon-dollar.svg);
+  background-size: contain;
+  width: 11px;
+  height: 17px;
+  margin-right: 14px;
+}
+
+.icon-people {
+  background-image: url(../images/icon-person.svg);
+  background-size: contain;
+  width: 13px;
+  height: 16px;
+  margin-right: 14px;
+}
+
+.input-custom {
+  border: none;
+  outline: none;
+  text-align: right;
+}
+
+.percent-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.percent-item {
+  width: 40px;
+  padding: 3px 30px;
+  border-radius: 3px;
+  margin: 6px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-reset {
+  height: 50px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

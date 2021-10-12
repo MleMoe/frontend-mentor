@@ -1,30 +1,13 @@
-import { useState } from 'react';
+import './app.css';
+import { TipCard } from './tipCard';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  /*
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  */
-  return <div className='App'></div>;
+  return (
+    <div className='app bg-light-2'>
+      <div className='app-logo' />
+      <TipCard />
+    </div>
+  );
 }
 
 export default App;

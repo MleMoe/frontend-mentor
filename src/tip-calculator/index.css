@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(185, 41%, 84%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.radius {
+  border-radius: 20px;
+}
+
+/*
+--- 背景颜色 background color ---
+*/
+
+.bg-white {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.bg-dark {
+  background-color: hsl(183, 100%, 15%);
+}
+
+.bg-strong {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.bg-light-1 {
+  background-color: hsl(189, 41%, 97%);
+}
+
+.bg-light-2 {
+  background-color: hsl(185, 41%, 84%);
+}
+
+/*
+--- 文本颜色 font color ---
+*/
+
+.white {
+  color: #fff;
+}
+
+.dark-1 {
+  color: hsl(184, 14%, 56%);
+}
+
+.dark-2 {
+  color: hsl(186, 14%, 43%);
+}
+
+.color-strong {
+  color: hsl(172, 67%, 45%);
+}
+
+/*
+--- 字体大小 font size ---
+*/
+
+.font-s {
+  font-size: 12px;
+}
+
+.font-m {
+  font-size: 16px;
+}
+
+.font-l {
+  font-size: 24px;
+}
+
+.font-xl {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/*
+--- 布局 layout ---
+*/
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
 }
