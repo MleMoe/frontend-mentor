@@ -3,7 +3,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 900px;
 }
 
 .card-item {
@@ -12,7 +11,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 100vw;
-  max-width: 355px;
+  max-width: 420px;
   min-height: 380px;
 }
 
@@ -30,7 +29,6 @@
   justify-content: space-between;
   box-sizing: border-box;
   padding: 30px;
-  min-width: 300px;
   flex-grow: 1;
   padding-bottom: 60px;
 }
@@ -120,6 +118,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .result-num {
   flex-grow: 1;
   text-align: right;
