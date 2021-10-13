@@ -1,137 +1,139 @@
 .card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .card-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: 100vw;
-  max-width: 420px;
-  min-height: 380px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100vw;
+	max-width: 420px;
+	min-height: 380px;
 }
 
 .card-item-left {
-  padding: 30px;
+	padding: 30px;
 }
 
 .card-item-right-wrap {
-  padding: 30px;
+	padding: 30px;
 }
 
 .card-item-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 30px;
-  flex-grow: 1;
-  padding-bottom: 60px;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: space-between;
+	padding: 30px;
+	padding-bottom: 60px;
 }
 
 .card-item-sub:not(:last-of-type) {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .input-container {
-  border-radius: 2px;
-  padding: 14px 16px;
-  margin-top: 6px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 6px;
+	border-radius: 2px;
+	padding: 14px 16px;
 }
 
 .input-container:hover {
-  box-shadow: 0 0 0 2px hsl(172, 31%, 51%);
+	box-shadow: 0 0 0 2px hsl(172, 31%, 51%);
 }
 
 .focus {
-  box-shadow: 0 0 0 2px hsl(172, 31%, 51%);
+	box-shadow: 0 0 0 2px hsl(172, 31%, 51%);
 }
 
 .active {
-  background-color: hsl(172, 67%, 45%);
-  color: hsl(183, 100%, 15%);
+	background-color: hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
 }
 
 .warning {
-  box-shadow: 0 0 0 1.5px hsl(359, 100%, 65%);
+	box-shadow: 0 0 0 1.5px hsl(359, 100%, 65%);
 }
 
 .icon-dollar {
-  background-image: url(../images/icon-dollar.svg);
-  background-size: contain;
-  width: 11px;
-  height: 17px;
-  margin-right: 14px;
+	margin-right: 14px;
+	background-image: url(../images/icon-dollar.svg);
+	background-size: contain;
+	width: 11px;
+	height: 17px;
 }
 
 .icon-people {
-  background-image: url(../images/icon-person.svg);
-  background-size: contain;
-  width: 13px;
-  height: 16px;
-  margin-right: 14px;
+	margin-right: 14px;
+	background-image: url(../images/icon-person.svg);
+	background-size: contain;
+	width: 13px;
+	height: 16px;
 }
 
 .input-custom {
-  border: none;
-  outline: none;
-  text-align: right;
-  flex-grow: 1;
-  width: 50px;
+	flex-grow: 1;
+	outline: none;
+	border: none;
+	width: 50px;
+	text-align: right;
 }
 
 .percent-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  /* gitter 实现 */
-  margin: 0 -6px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	/* gitter 实现 */
+	margin: 0 -6px;
 }
 
 .percent-item {
-  width: 45px;
-  padding: 3px 30px;
-  border-radius: 3px;
-  flex-shrink: 1;
-  flex-grow: 1;
-  margin: 6px;
+	box-sizing: content-box;
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin: 6px;
+	border-radius: 3px;
+	padding: 3px 30px;
+	width: 45px;
 }
 
 .percent-item:not(:last-of-type):hover {
-  background-color: hsl(173, 71%, 73%);
-  color: hsl(183, 100%, 15%);
+	background-color: hsl(173, 71%, 73%);
+	color: hsl(183, 100%, 15%);
 }
 
 .percent-item:last-of-type:hover {
-  box-shadow: 0 0 0 2px hsl(172, 31%, 51%);
+	box-shadow: 0 0 0 2px hsl(172, 31%, 51%);
 }
 
 .result-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .result-num {
-  flex-grow: 1;
-  text-align: right;
+	flex-grow: 1;
+	text-align: right;
 }
 
 .btn-reset {
-  height: 50px;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	height: 50px;
 }
 
 .btn-reset:hover {
-  background-color: hsl(173, 71%, 73%);
+	background-color: hsl(173, 71%, 73%);
 }

@@ -1,20 +1,12 @@
 body {
-  margin: 0;
-  font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: hsl(185, 41%, 84%);
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	margin: 0;
+	font-family: 'Space Mono', monospace, 'Fira Sans', 'Droid Sans',
+		'Helvetica Neue', sans-serif;
+	background-color: hsl(185, 41%, 84%);
 }
 
 .radius {
-  border-radius: 20px;
+	border-radius: 20px;
 }
 
 /*
@@ -22,23 +14,23 @@ code {
 */
 
 .bg-white {
-  background-color: hsl(0, 0%, 100%);
+	background-color: hsl(0, 0%, 100%);
 }
 
 .bg-dark {
-  background-color: hsl(183, 100%, 15%);
+	background-color: hsl(183, 100%, 15%);
 }
 
 .bg-strong {
-  background-color: hsl(172, 67%, 45%);
+	background-color: hsl(172, 67%, 45%);
 }
 
 .bg-light-1 {
-  background-color: hsl(189, 41%, 97%);
+	background-color: hsl(189, 41%, 97%);
 }
 
 .bg-light-2 {
-  background-color: hsl(185, 41%, 84%);
+	background-color: hsl(185, 41%, 84%);
 }
 
 /*
@@ -46,35 +38,35 @@ code {
 */
 
 .white {
-  color: #fff;
+	color: #fff;
 }
 
 .light-1 {
-  color: hsl(189, 41%, 97%);
+	color: hsl(189, 41%, 97%);
 }
 
 .light-2 {
-  color: hsl(185, 41%, 84%);
+	color: hsl(185, 41%, 84%);
 }
 
 .dark-1 {
-  color: hsl(184, 14%, 56%);
+	color: hsl(184, 14%, 56%);
 }
 
 .dark-2 {
-  color: hsl(186, 14%, 43%);
+	color: hsl(186, 14%, 43%);
 }
 
 .dark-3 {
-  color: hsl(183, 100%, 15%);
+	color: hsl(183, 100%, 15%);
 }
 
 .color-strong {
-  color: hsl(172, 67%, 45%);
+	color: hsl(172, 67%, 45%);
 }
 
 .red {
-  color: hsl(359, 100%, 65%);
+	color: hsl(359, 100%, 65%);
 }
 
 /*
@@ -82,27 +74,27 @@ code {
 */
 
 .font-s {
-  font-size: 12px;
+	font-size: 12px;
 }
 
 .font-m {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .font-l {
-  font-size: 24px;
+	font-size: 24px;
 }
 
 .font-xl {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .weight {
-  font-weight: 600;
+	font-weight: 600;
 }
 
 .weight-heavy {
-  font-weight: 800;
+	font-weight: 800;
 }
 
 /*
@@ -110,25 +102,25 @@ code {
 */
 
 .flex {
-  display: flex;
+	display: flex;
 }
 
 .flex-row {
-  flex-direction: row;
+	flex-direction: row;
 }
 
 .flex-col {
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .justify-center {
-  justify-content: center;
+	justify-content: center;
 }
 
 .justify-between {
-  justify-content: space-between;
+	justify-content: space-between;
 }
 
 .align-center {
-  align-items: center;
+	align-items: center;
 }
