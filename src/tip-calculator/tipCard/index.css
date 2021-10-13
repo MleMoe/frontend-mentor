@@ -11,8 +11,9 @@
 .card-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 375px;
+  min-height: 300px;
 }
 
 .card-item-left {
@@ -25,9 +26,10 @@
   padding: 30px;
   min-width: 345px;
   flex-shrink: 0;
+  padding-bottom: 60px;
 }
 
-.card-item-sub {
+.card-item-sub:not(:last-of-type) {
   margin-bottom: 30px;
 }
 
@@ -38,6 +40,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.input-container:hover {
+  box-shadow: 0 0 0 2px hsl(172, 31%, 51%);
+}
+
+.focus {
+  box-shadow: 0 0 0 2px hsl(172, 31%, 51%);
+}
+
+.active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.warning {
+  box-shadow: 0 0 0 1.5px hsl(359, 100%, 65%);
 }
 
 .icon-dollar {
@@ -60,6 +79,7 @@
   border: none;
   outline: none;
   text-align: right;
+  flex-grow: 1;
 }
 
 .percent-container {
@@ -79,10 +99,23 @@
   margin: 6px;
 }
 
+.percent-item:not(:last-of-type):hover {
+  background-color: hsl(173, 71%, 73%);
+  color: hsl(183, 100%, 15%);
+}
+
+.percent-item:last-of-type:hover {
+  box-shadow: 0 0 0 2px hsl(172, 31%, 51%);
+}
+
 .result-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.result-num {
+  flex-grow: 1;
+  text-align: right;
 }
 
 .btn-reset {
@@ -91,4 +124,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-reset:hover {
+  background-color: hsl(173, 71%, 73%);
 }

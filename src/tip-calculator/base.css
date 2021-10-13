@@ -65,8 +65,16 @@ code {
   color: hsl(186, 14%, 43%);
 }
 
+.dark-3 {
+  color: hsl(183, 100%, 15%);
+}
+
 .color-strong {
   color: hsl(172, 67%, 45%);
+}
+
+.red {
+  color: hsl(359, 100%, 65%);
 }
 
 /*
@@ -87,7 +95,14 @@ code {
 
 .font-xl {
   font-size: 40px;
+}
+
+.weight {
   font-weight: 600;
+}
+
+.weight-heavy {
+  font-weight: 800;
 }
 
 /*
@@ -108,6 +123,10 @@ code {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .align-center {
