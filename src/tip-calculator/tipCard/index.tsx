@@ -155,32 +155,34 @@ const TipCard: FC = () => {
           </div>
         </div>
       </div>
-      <div className='card-item card-item-right bg-dark radius'>
-        <div>
-          <div className='result-container'>
-            <div>
-              <div className='white font-m weight'>Tip Amount</div>
-              <div className='dark-1 font-s'>/ person</div>
+      <div className='card-item card-item-right-wrap'>
+        <div className='card-item-right bg-dark radius'>
+          <div>
+            <div className='result-container'>
+              <div>
+                <div className='white font-m weight'>Tip Amount</div>
+                <div className='dark-1 font-s'>/ person</div>
+              </div>
+              <div className='result-num color-strong font-xl weight-heavy'>
+                ${tipAmount}
+              </div>
             </div>
-            <div className='result-num color-strong font-xl weight-heavy'>
-              ${tipAmount}
+            <div className='result-container'>
+              <div>
+                <div className='white font-m weight'>Total</div>
+                <div className='dark-1 font-s'>/ person</div>
+              </div>
+              <div className='result-num color-strong font-xl weight-heavy'>
+                ${totalAmount}
+              </div>
             </div>
           </div>
-          <div className='result-container'>
-            <div>
-              <div className='white font-m weight'>Total</div>
-              <div className='dark-1 font-s'>/ person</div>
-            </div>
-            <div className='result-num color-strong font-xl weight-heavy'>
-              ${totalAmount}
-            </div>
+          <div
+            className='btn-reset bg-strong dark-3 font-m weight'
+            onClick={() => onReset()}
+          >
+            RESET
           </div>
-        </div>
-        <div
-          className='btn-reset bg-strong dark-3 font-m weight'
-          onClick={() => onReset()}
-        >
-          RESET
         </div>
       </div>
     </div>
