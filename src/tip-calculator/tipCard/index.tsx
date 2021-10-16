@@ -1,5 +1,15 @@
-import { FC, useState, useMemo } from 'react';
+import React, { FC, useState, useMemo, useEffect } from 'react';
 import './index.css';
+
+// 有一些需求姐妹可以考虑实现一下~ （具体的展示gif在语雀文档）
+// 1. bill 应该是可以有小数点的
+// 2. 自定义的 tip 应该是不能为负数的（现在是可以为负数和0的）
+// 3. 目前的 input 控件在点击后，锚点定位在 0 之前，如果直接输会是金额的 10 倍，需要控制鼠标到 0 后才会是正确的
+
+const NoneState = [false, false, false]
+const BillState = [true, false, false]
+const PercentState = [false, true, false]
+const PeopleNumState = [false, false, true]
 
 const TipCard: FC = () => {
 	const [bill, setBill] = useState<number>(0);
@@ -29,9 +39,12 @@ const TipCard: FC = () => {
 		setPeopleNum(0);
 	};
 
-	const [focusState, setFocusState] = useState(
-		new Array<boolean>(3).fill(false)
-	);
+	// const [focusState, setFocusState] = useState(
+	// 	new Array<boolean>(3).fill(false)
+	// );
+	// RECOMMEND 因为 focus state 目前是有限种情况，我觉得用常量会在可读性上更强。
+	const [focusState, setFocusState] = useState(NoneState)
+	const setNoneState = () => setFocusState(NoneState)
 
 	const [warning, setWarning] = useState<boolean>(null!);
 
@@ -56,11 +69,9 @@ const TipCard: FC = () => {
 								!isNaN(num) && setBill(num);
 							}}
 							onFocus={() => {
-								setFocusState([true, false, false]);
+								setFocusState(BillState);
 							}}
-							onBlur={() => {
-								setFocusState([false, false, false]);
-							}}
+							onBlur={setNoneState}
 						/>
 					</div>
 				</div>
@@ -111,11 +122,9 @@ const TipCard: FC = () => {
 									});
 								}}
 								onFocus={() => {
-									setFocusState([false, true, false]);
+									setFocusState(PercentState);
 								}}
-								onBlur={() => {
-									setFocusState([false, false, false]);
-								}}
+								onBlur={setNoneState}
 							/>
 						</div>
 					</div>
@@ -146,11 +155,9 @@ const TipCard: FC = () => {
 								}
 							}}
 							onFocus={() => {
-								setFocusState([false, false, true]);
+								setFocusState(PeopleNumState);
 							}}
-							onBlur={() => {
-								setFocusState([false, false, false]);
-							}}
+							onBlur={setNoneState}
 						/>
 					</div>
 				</div>
