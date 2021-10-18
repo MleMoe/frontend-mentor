@@ -173,8 +173,8 @@ const TipCard: FC = () => {
 							placeholder='0'
 							value={peopleNum || ''}
 							onChange={(event) => {
-								const num = Number(event.target.value || '0');
-								!isNaN(num) && setPeopleNum(num);
+								const num = parseInt(event.target.value || '0');
+								!isNaN(num) && num >= 0 && setPeopleNum(num);
 								if (event.target.value === '0') {
 									setWarning(true);
 								} else {
