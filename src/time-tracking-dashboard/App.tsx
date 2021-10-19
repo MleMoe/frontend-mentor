@@ -1,9 +1,8 @@
-import { useState } from 'react';
+import { Dashboard } from './components';
+import data from './data/data.json';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <div className='App'></div>;
+	return <Dashboard data={data} />;
 }
 
 export default App;
