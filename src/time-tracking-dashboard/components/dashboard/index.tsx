@@ -1,22 +1,38 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
+import { ProfileCard } from '../profileCard';
+import { ActivityType, TypeCard } from '../typeCard';
 import styles from './index.module.scss';
 
+export type TimeType = 'daily' | 'weekly' | 'monthly';
+
 type DashboardProps = {
-	data: {
-		title: string;
-		timeframes: {
-			[key in 'daily' | 'weekly' | 'monthly']: {
-				current: number;
-				previous: number;
-			};
-		};
-	}[];
+	activities: ActivityType[];
 };
 
-const Dashboard: FC<DashboardProps> = ({ data }) => {
-	console.log('data: ', data);
+const Dashboard: FC<DashboardProps> = ({ activities }) => {
+	const timeArray: TimeType[] = ['daily', 'weekly', 'monthly'];
+	const [selectedTime, setSelectedTime] = useState<TimeType>('weekly');
 
-	return <div className={styles.container}></div>;
+	const onSelect = (time: TimeType) => {
+		setSelectedTime(time);
+	};
+
+	return (
+		<div className={styles.container}>
+			<div className={styles.item}>
+				<ProfileCard
+					selectedTime={selectedTime}
+					timeArray={timeArray}
+					onSelect={onSelect}
+				/>
+			</div>
+			{activities.map((item, index) => (
+				<div key={index} className={styles.item}>
+					<TypeCard activity={item} timeType={selectedTime} />
+				</div>
+			))}
+		</div>
+	);
 };
 
 export { Dashboard };

@@ -1,0 +1,48 @@
+@import '../../base.scss';
+
+.profile-wrap {
+	box-sizing: border-box;
+	padding: 30px 20px;
+	background-color: $blue;
+	height: 290px;
+	@extend .radius;
+}
+
+.avatar {
+	width: 60px;
+	height: 60px;
+	background-size: contain;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background-image: url('../../assets/images/image-jeremy.png');
+}
+
+.desc {
+	margin-top: 30px;
+	color: $pale-blue;
+	font-size: 12px;
+}
+
+.name {
+	margin-top: 10px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.time-wrap {
+	padding: 15px 20px 20px 20px;
+}
+
+.time-item {
+	color: $pale-blue;
+	font-size: 18px;
+	margin: 8px 0;
+
+	&.selected {
+		color: #fff;
+	}
+}
+
+.time-item:hover {
+	color: #fff;
+}

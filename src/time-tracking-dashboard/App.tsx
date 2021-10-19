@@ -1,8 +1,8 @@
 import { Dashboard } from './components';
-import data from './data/data.json';
+import data from './assets/data/data.json';
 
 function App() {
-	return <Dashboard data={data} />;
+	return <Dashboard activities={data} />;
 }
 
 export default App;

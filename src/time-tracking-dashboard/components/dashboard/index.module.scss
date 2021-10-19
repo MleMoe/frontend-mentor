@@ -1,6 +1,76 @@
+@import '../../base.scss';
+
 .container {
-	max-width: 900px;
+	max-width: 1000px;
+	min-height: 100vh;
+	margin: auto;
+	// background-color: beige;
+
 	display: grid;
-	min-height: 500px;
-	background-color: red;
+
+	justify-content: center;
+	align-content: center;
+
+	grid-template-columns: repeat(4, auto);
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
+
+	justify-items: stretch;
+}
+
+.item {
+	@extend .radius;
+	box-sizing: border-box;
+	width: 200px;
+	height: 200px;
+}
+
+.item:first-of-type {
+	width: 200px;
+	height: 420px;
+
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.item:nth-of-type(1) {
+	background-color: $dark-blue;
+}
+
+.item:not(:nth-of-type(1)) {
+	background-color: $dark-blue;
+	background-position: right 18px top -6px;
+	background-repeat: no-repeat;
+	background-size: 60px 60px;
+	padding-top: 40px;
+}
+
+.item:nth-of-type(2) {
+	background-color: $ligh-red;
+	background-image: url('../../assets/images/icon-work.svg');
+}
+
+.item:nth-of-type(3) {
+	background-color: $soft-blue;
+	background-image: url('../../assets/images/icon-play.svg');
+}
+
+.item:nth-of-type(4) {
+	background-color: $light-red;
+	background-image: url('../../assets/images/icon-study.svg');
+}
+
+.item:nth-of-type(5) {
+	background-color: $lime-green;
+	background-image: url('../../assets/images/icon-exercise.svg');
+}
+
+.item:nth-of-type(6) {
+	background-color: $violet;
+	background-image: url('../../assets/images/icon-social.svg');
+}
+
+.item:nth-of-type(7) {
+	background-color: $soft-orange;
+	background-image: url('../../assets/images/icon-self-care.svg');
 }
