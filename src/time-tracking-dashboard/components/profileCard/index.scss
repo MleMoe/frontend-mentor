@@ -6,6 +6,15 @@
 	background-color: $blue;
 	height: 290px;
 	@extend .radius;
+
+	@media only screen and (max-width: 750px) {
+		& {
+			height: 100px;
+			padding: 20px;
+			display: flex;
+			flex-direction: row;
+		}
+	}
 }
 
 .avatar {
@@ -17,20 +26,51 @@
 	background-image: url('../../assets/images/image-jeremy.png');
 }
 
+.profile-desc {
+	@media only screen and (max-width: 750px) {
+		& {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 16px;
+		}
+	}
+}
+
 .desc {
 	margin-top: 30px;
 	color: $pale-blue;
 	font-size: 12px;
+
+	@media only screen and (max-width: 750px) {
+		& {
+			margin-top: 0;
+		}
+	}
 }
 
 .name {
 	margin-top: 10px;
 	color: #fff;
 	font-size: 30px;
+
+	@media only screen and (max-width: 750px) {
+		& {
+			font-size: 20px;
+			margin-top: 5px;
+		}
+	}
 }
 
 .time-wrap {
 	padding: 15px 20px 20px 20px;
+	@media only screen and (max-width: 750px) {
+		& {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
 }
 
 .time-item {

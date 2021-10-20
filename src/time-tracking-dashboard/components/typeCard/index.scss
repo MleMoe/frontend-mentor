@@ -38,15 +38,21 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
+	justify-content: space-between;
 }
 
 .time-current {
-	font-size: 40px;
+	font-size: 36px;
 	color: #fff;
 }
 
 .time-previous {
-	font-size: 14px;
+	font-size: 12px;
+	@media only screen and (max-width: 750px) {
+		& {
+			line-height: 36px;
+		}
+	}
 	padding: 5px 0;
 	color: $pale-blue;
 }

@@ -17,8 +17,10 @@ const ProfileCard: FC<ProfileCardProps> = ({
 		<>
 			<div className='profile-wrap'>
 				<div className='avatar' />
-				<div className='desc'>Report for</div>
-				<div className='name'>Jeremy Robson</div>
+				<div className='profile-desc'>
+					<div className='desc'>Report for</div>
+					<div className='name'>Jeremy Robson</div>
+				</div>
 			</div>
 			<div className='time-wrap'>
 				{timeArray.map((time, index) => (
