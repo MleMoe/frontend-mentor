@@ -10,6 +10,9 @@
 	height: 100%;
 	@extend .radius;
 
+	position: relative;
+	bottom: -1px;
+
 	&:hover {
 		cursor: pointer;
 		background-color: rgb(45, 50, 116);

@@ -15,3 +15,8 @@ $pale-blue: hsl(236, 100%, 87%);
 .radius {
 	border-radius: 15px;
 }
+
+.radius-top {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}

@@ -19,7 +19,7 @@ const Dashboard: FC<DashboardProps> = ({ activities }) => {
 
 	return (
 		<div className={styles.container}>
-			<div className={styles.item}>
+			<div className={`${styles.item} ${styles.itemProfile}`}>
 				<ProfileCard
 					selectedTime={selectedTime}
 					timeArray={timeArray}

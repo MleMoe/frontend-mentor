@@ -31,7 +31,7 @@ const ProfileCard: FC<ProfileCardProps> = ({
 							onSelect(time);
 						}}
 					>
-						{time}
+						{time[0].toUpperCase() + time.substring(1)}
 					</div>
 				))}
 			</div>
