@@ -1,0 +1,36 @@
+@import '../../base.scss';
+
+.client {
+  &-card {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+
+    & > div {
+      margin-top: 40px;
+    }
+  }
+  &-avater {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+  }
+  &-comment {
+    color: $very-dark-grayish-blue;
+    font-size: 16px;
+  }
+  &-name {
+    font-family: Fraunces;
+    font-size: 18px;
+  }
+  &-position {
+    margin-top: 10px;
+    color: $grayish-blue;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,112 @@
+@import './base.scss';
+
+.img-cover {
+  object-fit: cover;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  font-family: Fraunces;
+  font-size: 30px;
+}
+
+.card-text {
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  color: $dark-grayish-blue;
+}
+
+.card-more {
+  display: inline-block;
+  font-family: Fraunces;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.btn-more {
+  background-color: $yellow;
+  opacity: 0.3;
+  height: 10px;
+  margin: -5px -5px 0 -5px;
+  border-radius: 10px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.client {
+  &-wrap {
+    box-sizing: border-box;
+    min-height: 50vw;
+    padding: 50px 0;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-title {
+    font-family: Fraunces;
+    color: $grayish-blue;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.gallery {
+  &-container {
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+  }
+  &-item {
+    flex-grow: 1;
+    min-width: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.footer {
+  &-container {
+    padding: 40px 0;
+    color: $dark-desaturated-cyan;
+    font-family: 'Barlow', sans-serif;
+    background-color: $dark-moderate-cyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > div {
+      margin-bottom: 30px;
+    }
+  }
+
+  &-title {
+    font-size: 30px;
+  }
+
+  &-items {
+    & > span {
+      margin: 0 25px;
+      opacity: 0.6;
+    }
+  }
+}
+
+.contact-icon {
+  padding-top: 20px;
+  & > img {
+    margin: 0 10px;
+  }
+}

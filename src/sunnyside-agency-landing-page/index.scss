@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url('./assets/fonts/Barlow-SemiBold.ttf');
+  font-weight: 600;
+}
+
+// @font-face {
+//   font-family: 'Barlow';
+//   src: url('./assets/fonts/Barlow-Regular.ttf');
+//   font-weight: 400;
+// }
+
+// @font-face {
+//   font-family: 'Barlow';
+//   src: url('./assets/fonts/Barlow-Light.ttf');
+//   font-weight: 300;
+// }
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./assets/fonts/Fraunces-Black.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./assets/fonts/Fraunces-Bold.ttf');
+  font-weight: 900;
+}
+
+body {
+  margin: 0;
+}
