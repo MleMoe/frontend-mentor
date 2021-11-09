@@ -40,10 +40,10 @@
   }
 }
 
-.nav-item {
-  color: $white;
-  font-weight: 400;
-}
+// .nav-item {
+//   color: $white;
+//   font-weight: 400;
+// }
 
 .btn-contact {
   background-color: $white;
@@ -55,4 +55,11 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 40px;
+
+  &.mobile {
+    background-color: $yellow;
+    width: 110px;
+    text-align: center;
+    margin: auto;
+  }
 }

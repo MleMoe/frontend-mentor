@@ -1,5 +1,5 @@
-import { FC, ReactNode, useMemo } from 'react';
-import { useWindowSize } from '../../../../utils/hooks';
+import { FC, ReactNode } from 'react';
+import { useContainer } from '../../../../utils/hooks';
 import './index.scss';
 
 type ImgTextCardPropsType = {
@@ -16,11 +16,7 @@ const ImgTextCard: FC<ImgTextCardPropsType> = ({
   order,
 }) => {
   const baseImgUrl = '/src/sunnyside-agency-landing-page/assets/images/';
-  const windowSize = useWindowSize();
-  const container = useMemo(
-    () => (windowSize.width < 769 ? 'mobile' : 'desktop'),
-    [windowSize]
-  );
+  const container = useContainer(768);
 
   return (
     <div
