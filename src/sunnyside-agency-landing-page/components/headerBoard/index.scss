@@ -55,6 +55,11 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 40px;
+  cursor: pointer;
+  &:hover:not(.mobile) {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: $white;
+  }
 
   &.mobile {
     background-color: $yellow;

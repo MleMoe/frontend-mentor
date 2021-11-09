@@ -100,14 +100,26 @@
   &-items {
     & > span {
       margin: 0 25px;
-      opacity: 0.6;
+      opacity: 0.7;
+      cursor: pointer;
+
+      &:hover {
+        color: $white;
+        opacity: 0.9;
+      }
     }
   }
 }
 
 .contact-icon {
   padding-top: 20px;
-  & > img {
+  color: #2c7566;
+  cursor: pointer;
+
+  & > svg {
     margin: 0 10px;
+    &:hover {
+      color: $white;
+    }
   }
 }

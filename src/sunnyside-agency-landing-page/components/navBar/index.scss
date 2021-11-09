@@ -12,6 +12,7 @@
     line-height: 28px;
     color: $white;
     font-weight: 600;
+    cursor: pointer;
   }
 }
 
@@ -36,6 +37,8 @@
   &-item {
     margin: 0 20px;
     color: rgba(255, 255, 255, 0.95);
+    cursor: pointer;
+
     &.mobile {
       color: $dark-grayish-blue;
       opacity: 0.8;
