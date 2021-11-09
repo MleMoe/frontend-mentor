@@ -35,8 +35,7 @@ const getHtml = (pagaName) => `<!DOCTYPE html>
     <title>fe-mentor</title>
     	<style>
         .attribution {
-          position: relative;
-          bottom: 10px;
+          padding-bottom: 10px;
           font-size: 12px;
           text-align: center;
           color: ${isDark === 'y' ? 'hsl(228, 45%, 44%)' : '#fff'};
