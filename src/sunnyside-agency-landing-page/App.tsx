@@ -103,7 +103,7 @@ const galleryData = [
     backgroundImg: baseImgUrl + 'desktop/image-gallery-cone.jpg',
   },
   {
-    backgroundImg: baseImgUrl + 'desktop/image-gallery-Sugarcubes.jpg',
+    backgroundImg: baseImgUrl + 'desktop/image-gallery-sugarcubes.jpg',
   },
 ];
 
