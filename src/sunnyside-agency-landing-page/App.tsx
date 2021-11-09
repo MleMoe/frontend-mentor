@@ -1,18 +1,5 @@
-import { useMemo, useEffect } from 'react';
 import './App.scss';
-import { useWindowSize } from '../../utils/hooks';
-import { HeaderBoard, ImgTextCard } from './components';
-
-import imageEmily from './assets/images/image-emily.jpg';
-import imageThomas from './assets/images/image-thomas.jpg';
-import imageJennie from './assets/images/image-jennie.jpg';
-
-import imageGalleryMilkbottles from './assets/images/desktop/image-gallery-milkbottles.jpg';
-import imageGalleryOrange from './assets/images/desktop/image-gallery-orange.jpg';
-import imageGalleryCone from './assets/images/desktop/image-gallery-cone.jpg';
-import imageGallerySugarcubes from './assets/images/desktop/image-gallery-sugarcubes.jpg';
-
-import { ClientCard } from './components/clientCard';
+import { HeaderBoard, ImgTextCard, ClientCard } from './components';
 
 function App() {
   const baseImgUrl = '/src/sunnyside-agency-landing-page/assets/images/';
@@ -58,8 +45,10 @@ function App() {
     {
       backgroundImg: 'image-graphic-design.jpg',
       content: [
-        <div className='card-title'>Graphic design</div>,
-        <div className='card-text'>
+        <div className='card-title' style={{ color: 'hsl(167, 40%, 24%)' }}>
+          Graphic design
+        </div>,
+        <div className='card-text' style={{ color: 'hsl(167, 40%, 24%)' }}>
           Great design makes you memorable. We deliver artwork that underscores
           your brand message and captures potential clients’ attention.
         </div>,
@@ -68,8 +57,10 @@ function App() {
     {
       backgroundImg: 'image-photography.jpg',
       content: [
-        <div className='card-title'>Photography</div>,
-        <div className='card-text'>
+        <div className='card-title' style={{ color: 'hsl(198, 62%, 26%)' }}>
+          Photography
+        </div>,
+        <div className='card-text' style={{ color: 'hsl(198, 62%, 26%)' }}>
           Increase your credibility by getting the most stunning, high-quality
           photos that improve your business image." your brand
         </div>,
@@ -79,21 +70,21 @@ function App() {
 
   const clientData = [
     {
-      avater: imageEmily,
+      avater: baseImgUrl + 'image-emily.jpg',
       comment:
         'We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.',
       name: 'Emily R.',
       position: 'Marketing Director',
     },
     {
-      avater: imageThomas,
+      avater: baseImgUrl + 'image-thomas.jpg',
       comment:
         'Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.',
       name: 'Thomas S.',
       position: 'Chief Operating Officer',
     },
     {
-      avater: imageJennie,
+      avater: baseImgUrl + 'image-jennie.jpg',
       comment:
         'Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!',
       name: 'Jennie F.',
@@ -103,16 +94,16 @@ function App() {
 
   const galleryData = [
     {
-      backgroundImg: imageGalleryMilkbottles,
+      backgroundImg: baseImgUrl + 'desktop/image-gallery-milkbottles.jpg',
     },
     {
-      backgroundImg: imageGalleryOrange,
+      backgroundImg: baseImgUrl + 'desktop/image-gallery-orange.jpg',
     },
     {
-      backgroundImg: imageGalleryCone,
+      backgroundImg: baseImgUrl + 'desktop/image-gallery-cone.jpg',
     },
     {
-      backgroundImg: imageGallerySugarcubes,
+      backgroundImg: baseImgUrl + 'desktop/image-gallery-Sugarcubes.jpg',
     },
   ];
 
