@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react';
 import { useContainer } from '../../../../utils/hooks';
 import './index.scss';
 
-const baseImgUrl = '../../assets/images/';
+const baseImgUrl = '/sunnyside-agency-landing-page/images/';
 
 type ImgTextCardPropsType = {
   /**
@@ -19,9 +19,7 @@ const ImgTextCard: FC<ImgTextCardPropsType> = ({
 }) => {
   const container = useContainer(768);
 
-  const imgUrl =
-    backgroundImg &&
-    new URL(baseImgUrl + container + '/' + backgroundImg, import.meta.url).href;
+  const imgUrl = backgroundImg && baseImgUrl + container + '/' + backgroundImg;
 
   return (
     <div

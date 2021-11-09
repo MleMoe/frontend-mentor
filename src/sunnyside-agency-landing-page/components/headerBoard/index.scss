@@ -5,14 +5,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../../assets/images/desktop/image-header.jpg');
+  background-image: url('/sunnyside-agency-landing-page/images/desktop/image-header.jpg');
 
   padding: 20px 30px;
 
   @media only screen and (max-width: 768px) {
     & {
       height: 143vw;
-      background-image: url('../../assets/images/mobile/image-header.jpg');
+      background-image: url('/sunnyside-agency-landing-page/images/mobile/image-header.jpg');
     }
   }
 }

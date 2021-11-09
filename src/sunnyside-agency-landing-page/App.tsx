@@ -1,7 +1,8 @@
 import './App.scss';
 import { HeaderBoard, ImgTextCard, ClientCard } from './components';
 
-const baseImgUrl = '/src/sunnyside-agency-landing-page/assets/images/';
+const baseImgUrl = '/sunnyside-agency-landing-page/images/';
+
 const cardData = [
   {
     content: [
