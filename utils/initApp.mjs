@@ -30,7 +30,7 @@ const getHtml = (pagaName) => `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/src/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/icons/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fe-mentor</title>
     	<style>
@@ -57,8 +57,8 @@ const getHtml = (pagaName) => `<!DOCTYPE html>
 			>. Coded by
 			<a href="https://github.com/MleMoe"
 				><img src="/src/icons/github ${
-					isDark === 'y' ? '-light' : ''
-				}-32.png" width="12" height="12" />
+          isDark === 'y' ? '-light' : ''
+        }-32.png" width="12" height="12" />
 				MleMoe </a
 			>.
 		</div>
