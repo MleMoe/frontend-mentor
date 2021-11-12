@@ -16,6 +16,7 @@ export default defineConfig({
       useDevMode: true,
     }),
   ],
+  base: '/frontend-mentor/',
   build: {
     rollupOptions: {
       input: {
