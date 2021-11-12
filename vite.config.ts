@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
+import qiankun from 'vite-plugin-qiankun';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,7 +10,12 @@ export default defineConfig({
       localsConvention: 'camelCaseOnly',
     },
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+    qiankun('viteApp', {
+      useDevMode: true,
+    }),
+  ],
   build: {
     rollupOptions: {
       input: {

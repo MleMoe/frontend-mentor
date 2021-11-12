@@ -5,9 +5,6 @@ import './index.scss';
 const baseImgUrl = '/sunnyside-agency-landing-page/images/';
 
 type ImgTextCardPropsType = {
-  /**
-   * bg-img url or color
-   */
   backgroundImg?: string;
   content?: ReactNode;
   order?: number;
