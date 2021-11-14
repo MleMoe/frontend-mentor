@@ -1,6 +1,7 @@
 # Frontend Practices
 
 > Challenge by [frontend mentor](https://www.frontendmentor.io/home)
+>
 > Code by me
 
 ## start
@@ -22,18 +23,25 @@ yarn dev
 
 ### Tip Calculator
 
-- Challenge Site: [frontend mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
+- Challenge Site: [tip-calculator-app](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX)
 
 - dev url: http://localhost:3000/pages/tip-calculator/
 
 ### Time tracking dashboard
 
-- Challenge Site: [frontend mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)
+- Challenge Site: [time-tracking-dashboard](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)
 
 - dev url: http://localhost:3000/pages/time-tracking-dashboard/
 
 ### Sunnyside agency landing page challenge hub
 
-- Challenge Site: [frontend mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef)
+- Challenge Site: [sunnyside-agency-landing-page](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef)
 
 - dev url: http://localhost:3000/pages/sunnyside-agency-landing-page/
+
+## Technologys
+
+- Vite
+- React
+- Typescript
+- Scss
