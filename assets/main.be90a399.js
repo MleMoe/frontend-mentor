@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime.4a13d66f.js";import{R as r,a as t}from"./vendor.7df26d4f.js";function d(){return e("div",{className:"App",children:"fe-mentor practise"})}r.render(e(t.StrictMode,{children:e(d,{})}),document.getElementById("root"));
